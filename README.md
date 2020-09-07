@@ -8,28 +8,39 @@ TC-3,
 TC-3-I-PIT.
 
 
-## Introduction
+## Connaître sa machine
 
 4h
 
 ### Informatique
 
-Dans ce [billet de blog](https://www.lemonde.fr/blog/binaire/2015/08/27/linformatique-privee-dordinateur/)
-est reprise la définition proposée par la Société Informatique de France :
+La Société Informatique de France a proposé la définition suivante de l'informatique :
 
 > L’informatique est la science et la technique de la représentation de l’information d’origine artificielle ou naturelle, ainsi que des processus algorithmiques de collecte, stockage, analyse, transformation, communication et exploitation de cette information, exprimés dans des langages formels ou des langues naturelles et effectués par des machines ou des êtres humains, seuls ou collectivement.
 
-L’informatique n’est pas juste la science des ordinateurs, c'est une science et technique qui peut s’appliquer à des supports matériels très différents, 
-*y compris* [l’ordinateur](https://www.lemonde.fr/blog/binaire/2014/04/01/que-diriez-vous-dordinateur/). 
+L’informatique n’est donc pas juste la science des ordinateurs, c'est une science et une technique qui peut s’appliquer à des supports matériels très différents, 
+dont [l’ordinateur](https://www.lemonde.fr/blog/binaire/2014/04/01/que-diriez-vous-dordinateur/), mais pas seulement. 
 
-Comme entrée en matière, vous êtes invité à lire ces billets ainsi que les liens qu'ils contiennent. 
+Comme entrée en matière, vous êtes invité à lire ce [billet](https://www.lemonde.fr/blog/binaire/2015/08/27/linformatique-privee-dordinateur/) ainsi que les liens qu'il contient. 
 
 ### Ordinateur
 
-L'ordinateur reste néanmoins un matériel que vous allez utiliser pendant de longues heures et il mérite que vous sachiez, au moins sommairement, de quoi il est fait. 
+L'ordinateur reste néanmoins la machine type de l'informatique. Vous mêmes allez certainement utiliser une telle machine pendant des heures, des jours, voire des années. Cela mérite bien de savoir, au moins sommairement, de quoi est fait une ordinateur.  
 
 Après avoir visionné cette vidéo [sur ce qu'à un ordinateur dans le ventre](https://www.lemonde.fr/blog/binaire/2017/05/31/podcast-le-ventre-de-mon-ordi/) 
-et vous être renseigné, éventuellement, sur les mots employés, vous devriez être capables de définir TODO
+et vous être renseigné, éventuellement, sur les termes employés, vous devriez savoir ce que sont des périphériques (interne/externe, entrée/sortie), des controleurs, des ports, des disques dur, des barettes de RAM, une carte graphique, une carte mère, un micro-processeur.  
+
+### Codage des informations
+
+TODO intro
+
+On est capable de coder en binaire aussi bien:
+- des entiers naturels,
+- des entiers signés,
+- des nombres décimaux [à virgule flottante]
+- des caractères (ASCII, unicode),
+- des données multimédias (son, image, vidéo, page web...),
+- des instructions et programmes, etc.
 
 ### Système d'exploitation
 
@@ -42,8 +53,6 @@ Le second rôle du système, le contrôle d’exécution, consiste à gérer au 
 Ces deux rôles doivent être pérennes. Pour cela, le système d’exploitation assure — et c’est là son troisième rôle — la sécurité de fonctionnement en cas de panne d’origine interne (matérielle ou logicielle) ou d’agression provenant d’un environnement de plus en plus ouvert (le réseau). Il sauvegarde automatiquement les travaux en cours et veille à permettre le redémarrage après une panne. Il doit aussi rendre possible une évolution matérielle (changement dans la configuration matérielle) ou fonctionnelle (mise à jour et ajout de programmes).
 
 SE : https://www.lemonde.fr/blog/binaire/2017/06/14/podcast-systeme-dexploitation/
-
-### Représentation des données
 
 
 
@@ -64,9 +73,18 @@ clarifier: console, terminale, ligne de commande, shell, bash, commandes, etc.
 manuel https://doc.ubuntu-fr.org/man
 
 
+### Pour aller plus loin
+
+Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux :
+- information,
+- algorithme,
+- langage,
+- machine.
 
 
-## Commandes
+
+
+## Commander sa machine
 
 4h
 
