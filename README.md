@@ -8,7 +8,7 @@ TC-3,
 TC-3-I-PIT.
 
 
-## Faire connaissance
+## 1. Faire connaissance
 
 4h
 
@@ -60,63 +60,72 @@ Si non, jouez à [Find your path](http://demo710.univ-lyon1.fr/FYP/) pour vous f
 
 La [console](https://doc.ubuntu-fr.org/console) est une interface textuelle qui permet à un utilisateur de demander à l'ordinateur de réaliser certaines tâches, uniquement à l'aide d'un écran et d'un clavier. Sur un serveur sans interface graphique la console est généralement directement accessible au démarrage. Sur une machine grand public, on utilise un [émulateur de terminal](https://doc.ubuntu-fr.org/terminal), c'est-à-dire un programme qui émule une console dans une interface graphique.
 
-L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que le système d'exploitation exécute. Quand une ligne de commande est écrite, elle est passée à l'interpréteur de lignes de commande (=*shell*), qui la décortique et se charge de la faire exécuter en interaction avec le système d'exploitation. Il existe de nombreux interpréteurs de lignes de commandes, qui fonctionnent tous plus ou moins de la même façon. Nous considérerons que ce sera *Bourne-Again Shell* (Bash) dans le reste du document. C'est le shell associé par défaut à un compte d'utilisateur dans Ubuntu. Si vous utilisez un autre système d'exploitation, voyez comment utiliser un émulateur de terminal, ainsi que Bash, ou vous adapter à un autre shell. Cette [page](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/1-Terminal.md) peut vous aider. 
+L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que le système d'exploitation exécute. Quand une ligne de commande est écrite, elle est passée à l'interpréteur de lignes de commande (=*shell*), qui la décortique et se charge de la faire exécuter en interaction avec le système d'exploitation. Il existe de nombreux interpréteurs de lignes de commandes, qui fonctionnent tous plus ou moins de la même façon. Nous considérerons que ce sera *Bourne-Again Shell* (bash) dans le reste du document. C'est le shell associé par défaut à un compte d'utilisateur dans Ubuntu. Si vous utilisez un autre système d'exploitation, voyez comment utiliser un émulateur de terminal, ainsi que bash, ou vous adapter à un shell similaire. Cette [page de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/1-Terminal.md) peut vous aider. 
 
-### Pour aller plus loin
+### Plus tard
 
-Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux :
-- information,
-- algorithme,
-- langage,
-- machine.
+Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux : information, algorithme, langage, machine.
 
 Au cours du premier semestre, vous approfondirez les piliers algorithme, langage, machine, respectivement en ALG, ELP et ARC. Le pilier information sera graduellement renforcé au cours de la formation transversalement aux domaines informatique, réseaux et systèmes de communications.  
 
-## Passer aux commandes
+## 2. Passer aux commandes
 
 4h
 
-Une commande est une instruction qu'un utilisateur envoie au système d'exploitation de l'ordinateur pour lui faire exécuter une tâche. Il peut s'agir de manipuler des fichiers, d'accéder à des répertoires, de modifier des droits d'accès, etc. Il existe un grand nombre de commandes et les actions précises de chacune d'elles sont de plus conditionnées par un ensemble plus ou moins grand d'options et de paramètres.
+Une *commande* est une instruction qu'un utilisateur envoie au système d'exploitation de l'ordinateur pour lui faire exécuter un *programme*. Un *processus* est une instance d'un programme en train de s'exécuter, autrement dit une tâche en cours. A chaque commande donnée, le programme correspondant est exécuté, un nouveau processus est créé. Il peut s'agir de créer ou supprimer des fichiers, d'accéder à des répertoires, de modifier des droits d'accès, etc. Il existe un grand nombre de commandes et les actions précises de chacune d'elles sont de plus conditionnées par un ensemble plus ou moins grand de paramètres.
 
-- niveau débutant: [commandes basiques](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande)
-- niveau intermédiaire: [commandes à connaitre](https://doc.ubuntu-fr.org/commande_shell) (uniquement les sections 1, 2 et 3 à ce stade).
-- niveau avancé (non demandé): [maitriser l'art de la ligne de commande](https://github.com/jlevy/the-art-of-command-line)
+- Commandes : 
+  - [commandes basiques](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande),
+  - [commandes à connaitre](https://doc.ubuntu-fr.org/commande_shell) (uniquement les sections 1, 2 et 3 à ce stade),
+- Fonctionnalités supplémentaires : 
+  - [redirections et enchainements](https://doc.ubuntu-fr.org/projets/ecole/scripting/initiation_au_shell) (sections 2, 3 et 5),
+  - [variables d'environnement](https://doc.ubuntu-fr.org/variables_d_environnement),
+  - gérer les [processus](https://www.tuteurs.ens.fr/unix/processus.html).
 
-Il reste des commandes très importantes en ces temps où le travaille à distance n'est pas rare :
-- ssh
-- scp
+Enfin, en ces temps où le travaille à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/2-VPN.md) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
 
-Vous pensez avoir bien travaillé ? Malheureusement, utiliser Bash ne se résume pas à taper des commandes mais impliquent aussi :
+Téléchargez et décompressez cette [archive](bash/bash_exercises.tar.bz2), puis traitez les questions listées dans le fichier `instructions.md`.
 
-- des [redirections et enchainements](https://doc.ubuntu-fr.org/projets/ecole/scripting/initiation_au_shell) (sections 2, 3 et 5),
-- des [variables d'environnement](https://doc.ubuntu-fr.org/variables_d_environnement),
-- des [processus](https://www.tuteurs.ens.fr/unix/processus.html).
+Faites le quizz de validation sur Moodle.
 
-exercices, quizz
+Bravo, vous êtes maintenant ceinture verte de bash. Vous voulez devenir ceinture noire ? Apprenez à maitriser [l'art de la ligne de commande](https://github.com/jlevy/the-art-of-command-line/blob/master/README-fr.md).
 
-## Editeur de texte
+## 3. Editeur de texte
 
-de 30 min à 4h
+de 1h à 4h
 
-## Programmation shell
+Vous allez bientôt écrire vous-mêmes des programmes. Ces programmes ne seront d'abord rien d'autres que du texte sauvegardé dans un fichier. Pour écrire du texte, vous avez besoin avant tout d'un *éditeur de texte*, un logiciel permettant d'écrire et modifier un texte. De même que vous êtes libres d'utiliser le système d'exploitation qui vous convient, vous êtes libres d'utiliser l'éditeur de texte qui vous convient, sous réserve que vous sachiez les utiliser bien sûr... Néanmoins, nous vous demandons de savoir utiliser, à un niveau débutant au moins, un éditeur particulier : *vi*. Pourquoi lui ? Il fait parti probablement de tous les systèmes d'exploitation de type unix, car il est léger, rapide, économe en ressource, puissant en fonctionnalités. Vous devrez peut-être un jour vous connecter à un serveur en mode console et modifier un fichier de configuration. Vous serez alors content de savoir ouvrir le fichier avec vi, passer en mode insertion et sauvegarder vos modifications. Vous vous remercierez d'avoir regarder attentivement les liens suivants : 
+
+- [tutoriel](https://openclassrooms.com/en/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur),
+- [FAQ](http://www.linux-france.org/article/appli/vi/faq/vifaq.html),
+- [cheatsheet](https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png),
+- [vi ou vim ?](https://doc.fedora-fr.org/wiki/Diff%C3%A9rences_entre_vi_et_vim). Note : dans Ubuntu, comme dans d'autres systèmes, vim est le seul éditeur de type vi installé par défaut, et donc, vi démarre vim par défaut. Ce n'est pas un problème car tout ce qui est dans vi est disponible dans vim.   
+
+Téléchargez et décompressez cette [archive](vi/vi_exercises.zip), puis traitez les questions listées dans le fichier `vi.pdf`.
+
+Faites le quizz de validation sur Moodle.
+
+Bravo, vous êtes maintenant ceinture jaune de vi. Vous voulez devenir ceinture noire de vi ? Utilisez-le pour écrire tous vos programmes.  
+
+## 4. Programmation bash
 
 4h
 
-- [Ecrire un script shell](https://doc.ubuntu-fr.org/tutoriel/script_shell)
+- [Ecrire un script bash](https://doc.ubuntu-fr.org/tutoriel/script_shell)
 
-? https://openclassrooms.com/en/courses/43538-reprenez-le-controle-a-laide-de-linux/42867-introduction-aux-scripts-shell
+TODO exercices, quizz
 
-exercices, quizz
-
-## Programmation python
+## 5-7. Programmation python
 
 8h
 
 exercices, quizz
 
-## Git, Github
+## 8. Git, Github
 
 4h
 
 - [Git](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/1-Git.md)
 - [Github](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/2-GitHub.md)
+
+TODO exercices, quizz
