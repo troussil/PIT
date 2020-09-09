@@ -62,12 +62,6 @@ La [console](https://doc.ubuntu-fr.org/console) est une interface textuelle qui 
 
 L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que le système d'exploitation exécute. Quand une ligne de commande est écrite, elle est passée à l'interpréteur de lignes de commande (=*shell*), qui la décortique et se charge de la faire exécuter en interaction avec le système d'exploitation. Il existe de nombreux interpréteurs de lignes de commandes, qui fonctionnent tous plus ou moins de la même façon. Nous considérerons que ce sera *Bourne-Again Shell* (bash) dans le reste du document. C'est le shell associé par défaut à un compte d'utilisateur dans Ubuntu. Si vous utilisez un autre système d'exploitation, voyez comment utiliser un émulateur de terminal, ainsi que bash, ou vous adapter à un shell similaire. Cette [page de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/1-Terminal.md) peut vous aider. 
 
-### Plus tard
-
-Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux : information, algorithme, langage, machine.
-
-Au cours du premier semestre, vous approfondirez les piliers algorithme, langage, machine, respectivement en ALG, ELP et ARC. Le pilier information sera graduellement renforcé au cours de la formation transversalement aux domaines informatique, réseaux et systèmes de communications.  
-
 ## 2. Passer aux commandes
 
 4h
@@ -98,28 +92,43 @@ Vous allez bientôt écrire vous-mêmes des programmes. Ces programmes ne seront
 
 - [tutoriel](https://openclassrooms.com/en/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur),
 - [FAQ](http://www.linux-france.org/article/appli/vi/faq/vifaq.html),
-- [cheatsheet](https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png),
+- [cheatsheet](https://www.ks.uiuc.edu/Training/Tutorials/Reference/virefcard.pdf) (vous en trouverez pleins d'autres sur le web),
 - [vi ou vim ?](https://doc.fedora-fr.org/wiki/Diff%C3%A9rences_entre_vi_et_vim). Note : dans Ubuntu, comme dans d'autres systèmes, vim est le seul éditeur de type vi installé par défaut, et donc, vi démarre vim par défaut. Ce n'est pas un problème car tout ce qui est dans vi est disponible dans vim.   
 
 Téléchargez et décompressez cette [archive](vi/vi_exercises.zip), puis traitez les questions listées dans le fichier `vi.pdf`.
 
 Faites le quizz de validation sur Moodle.
 
-Bravo, vous êtes maintenant ceinture jaune de vi. Vous voulez devenir ceinture noire de vi ? Utilisez-le pour écrire tous vos programmes.  
+Bravo, vous êtes maintenant ceinture jaune de vi. Vous voulez devenir ceinture noire ? Utilisez-le pour écrire tous vos programmes.  
 
 ## 4. Programmation bash
 
 4h
 
-- [Ecrire un script bash](https://doc.ubuntu-fr.org/tutoriel/script_shell)
+Apprenez à [écrire un script bash](https://doc.ubuntu-fr.org/tutoriel/script_shell).
 
-TODO exercices, quizz
+C'est très utile quand on veut automatiser certaines tâches comme convertir le format de chaque image d'un répertoire, remplacer une chaine de caractère par une autre dans tous les fichiers et noms de fichier d'un projet de développement, etc. Ne prenez pas peur, ces [exercices](bash/scripts.md) sont plus simples. Une fois écrits, testés, téléversez une archive de vos scripts sur Moodle. 
 
 ## 5-7. Programmation python
 
-8h
+de 8h à 12h
 
-exercices, quizz
+Vous allez maintenant apprendre à programmer dans un langage de haut niveau. Il a l'avantage d'être facile à prendre en main par un débutant et d'être puissant dans le sens où quelques lignes assez lisibles permettront au programmeur de faire effectuer un traitement complexe. Il est très utilisé, entre autres domaines, dans le web côté serveur (Django, Flask), en calcul scientifique (Numpy, Matplotlib, Sympy), en machine learning (Pytorch), voire en administration système remplaçant parfois bash. 
+
+- [niveau débutant](https://zestedesavoir.com/tutoriels/799/apprendre-a-programmer-avec-python-3/)
+- niveau avancé, documentation officielle :
+  - [tutoriel](https://docs.python.org/fr/3/tutorial/index.html)
+  - [HOWTOs](https://docs.python.org/fr/3/howto/index.html)
+  - [FAQ](https://docs.python.org/fr/3/faq/programming.html)
+ 
+Pour chacun des items suivants, faites les exercices correspondants, puis répondez au quizz de validation Moodle.
+
+- [Premiers pas](python/1.pdf)
+- [Manipuler des objets](python/2.pdf)
+- [Créer des objets](python/3.pdf)
+
+Attention, il y a différentes versions de python qui cohabitent encore ça et là. Python 2 est maintenant obsolète. Veillez à programmer en python 3 et vérifier la version des extraits de code que vous glanez sur le web.  
+
 
 ## 8. Git, Github
 
@@ -128,4 +137,16 @@ exercices, quizz
 - [Git](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/1-Git.md)
 - [Github](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/2-GitHub.md)
 
-TODO exercices, quizz
+Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des fichiers à compléter pour réaliser un programme python capable de résoudre une grille de Sudoku. L'objectif n'est pas tant de coder complètement un tel programme, mais de développer à plusieurs (au moins deux !) et se familiariser avec git et github.
+
+Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request".
+
+## Suite de la formation
+
+Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux : information, algorithme, langage, machine.
+
+Au cours du premier semestre, vous approfondirez les piliers algorithme, langage, machine, respectivement en ALG, ELP et ARC. Le pilier information sera graduellement renforcé au cours de la formation transversalement aux domaines informatique, réseaux et systèmes de communications.  
+
+## Remerciements
+
+Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels vous êtes orientés.  
