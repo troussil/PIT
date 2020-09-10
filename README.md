@@ -141,12 +141,25 @@ Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des 
 
 Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request".
 
-## Suite de la formation
+## Suite de la formation et logiciels utilisés en TC
 
 Selon un [rapport de l'académie des sciences](https://www.academie-sciences.fr/pdf/rapport/rads_0513.pdf), l'informatique s'articule autour de quatre piliers fondamentaux : information, algorithme, langage, machine.
 
 Au cours du premier semestre, vous approfondirez les piliers algorithme, langage, machine, respectivement en ALG, ELP et ARC. Le pilier information sera graduellement renforcé au cours de la formation transversalement aux domaines informatique, réseaux et systèmes de communications.  
 
+Afin que vous puissiez anticiper l'installation ou la prise en main d'un outil, voici une [liste des logiciels](logicielsTC.md) utilisés au cours de la formation (en cours de construction). 
+
+## Jeux
+
+Vous voulez allier l'utile à l'agréable ? Continuez à vous familliariser avec les outils précédents tout en vous amusant ? Alors voici une sélection de jeux :
+
+- plateforme de code [codingame](https://www.codingame.com/) pour résoudre des énigmes de programmation dans le langage que vous choisissez.
+- jeux d'aventure / wargame pour maîtriser bash :
+  - [bashcrawl](https://gitlab.com/slackermedia/bashcrawl)
+  - [terminus](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
+  - [clmystery](https://github.com/veltman/clmystery)
+  - [bandit](https://overthewire.org/wargames/bandit/)
+
 ## Remerciements
 
-Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels vous êtes orientés.  
+Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels les liens conduisent.  
