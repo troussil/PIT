@@ -7,7 +7,6 @@ Télécommunications,
 TC-3,
 TC-3-I-PIT.
 
-
 ## 1. Faire connaissance
 
 4h
@@ -129,7 +128,6 @@ Pour chacun des items suivants, faites les exercices correspondants, puis répon
 
 Attention, il y a différentes versions de python qui cohabitent encore ça et là. Python 2 est maintenant obsolète. Veillez à programmer en python 3 et vérifier la version des extraits de code que vous glanez sur le web.  
 
-
 ## 8. Git, Github
 
 4h
@@ -139,7 +137,7 @@ Attention, il y a différentes versions de python qui cohabitent encore ça et l
 
 Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des fichiers à compléter pour réaliser un programme python capable de résoudre une grille de Sudoku. L'objectif n'est pas tant de coder complètement un tel programme, mais de développer à plusieurs (au moins deux !) et se familiariser avec git et github.
 
-Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request".
+Vous pouvez aussi contribuer à améliorer ce document (voir la dernière section). 
 
 ## Suite de la formation et logiciels utilisés en TC
 
@@ -162,4 +160,12 @@ Vous voulez allier l'utile à l'agréable ? Continuez à vous familliariser avec
 
 ## Remerciements
 
-Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels les liens conduisent.  
+Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels les liens conduisent. Nous traçons les contributions uniquement depuis la diffusion publique du document. 
+
+## Contributions depuis la rentrée 2020
+
+Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request". N'oubliez pas d'ajouter votre nom à la liste des contributeurs :
+
+Contributeurs par ordre alphabétique :
+- Tristan Roussillon
+
