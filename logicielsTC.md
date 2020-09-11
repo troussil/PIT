@@ -38,16 +38,16 @@ Voir aussi la [liste](https://dsi.insa-lyon.fr/content/postes-et-logiciels-en-tc
 - SIS
   - Matlab (matlab_2019a)
     - Add-ons :
-      Simulink Dektop Real-Time
-      Simscape Electrical
-      Simcape
-      Symbolic Math Toolbox
-      Statistics and Machine Learning Toolbox
-      Simulink
-      Signal Processing Toolbox
-      Image Processing Toolbox
-      DSP System Toolbox
-      Communications Toolbox
+      - Simulink Dektop Real-Time
+      - Simscape Electrical
+      - Simcape
+      - Symbolic Math Toolbox
+      - Statistics and Machine Learning Toolbox
+      - Simulink
+      - Signal Processing Toolbox
+      - Image Processing Toolbox
+      - DSP System Toolbox
+      - Communications Toolbox
 
 ### Réseau
 
