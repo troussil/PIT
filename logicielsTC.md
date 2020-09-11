@@ -1,6 +1,10 @@
 # Liste de logiciels utilisés en TC
 
+09/2020
+
 Merci de noter le nom des logiciels (avec éventuellement une version minimale et une indication d'installation) utilisés dans chaque matière et de signaler ceux qui nécessitent d'être maitrisé avant le début de l'enseignement.
+
+Voir aussi la [liste](https://dsi.insa-lyon.fr/content/postes-et-logiciels-en-tc), gérée par la DSI, des logiciels installés sur les postes du département à l'INSA. 
 
 ## 3 TC
 
@@ -22,6 +26,8 @@ Merci de noter le nom des logiciels (avec éventuellement une version minimale e
 - CRO
   - gcc
   - make
+  - minicom
+  - msp430
 - WEB
   - à connaitre :
     - python, 
@@ -30,7 +36,7 @@ Merci de noter le nom des logiciels (avec éventuellement une version minimale e
 ### Syscoms
 
 - SIS
-  - Matlab
+  - Matlab (matlab_2019a)
     - Add-ons :
       Simulink Dektop Real-Time
       Simscape Electrical
@@ -42,7 +48,6 @@ Merci de noter le nom des logiciels (avec éventuellement une version minimale e
       Image Processing Toolbox
       DSP System Toolbox
       Communications Toolbox
-
 
 ### Réseau
 
