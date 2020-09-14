@@ -65,7 +65,7 @@ L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que 
 
 4h
 
-Une *commande* est une instruction qu'un utilisateur envoie au système d'exploitation de l'ordinateur pour lui faire exécuter un *programme*. Un *processus* est une instance d'un programme en train de s'exécuter, autrement dit une tâche en cours. A chaque commande donnée, le programme correspondant est exécuté, un nouveau processus est créé. Il peut s'agir de créer ou supprimer des fichiers, d'accéder à des répertoires, de modifier des droits d'accès, etc. Il existe un grand nombre de commandes et les actions précises de chacune d'elles sont de plus conditionnées par un ensemble plus ou moins grand de paramètres.
+Une *commande* est une instruction qu'un utilisateur envoie au système d'exploitation de l'ordinateur pour lui faire exécuter un *programme*. Un *processus* est une instance d'un programme en train de s'exécuter, autrement dit une tâche en cours. A chaque commande donnée, le programme correspondant est exécuté, un nouveau processus est créé. Il peut s'agir de supprimer des fichiers, d'accéder à des répertoires, de modifier des droits d'accès, etc. Il existe un grand nombre de commandes et les actions précises de chacune d'elles sont de plus conditionnées par un ensemble plus ou moins grand de paramètres.
 
 - Commandes : 
   - [commandes basiques](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande),
@@ -75,11 +75,13 @@ Une *commande* est une instruction qu'un utilisateur envoie au système d'exploi
   - [variables d'environnement](https://doc.ubuntu-fr.org/variables_d_environnement),
   - gérer les [processus](https://www.tuteurs.ens.fr/unix/processus.html).
 
-Enfin, en ces temps où le travaille à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/2-VPN.md) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
-
 Téléchargez et décompressez cette [archive](bash/bash_exercises.tar.bz2), puis traitez les questions listées dans le fichier `instructions.md`.
 
-Faites le quizz de validation sur Moodle.
+Faites le quizz de validation bash sur Moodle.
+
+Enfin, en ces temps où le travaille à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/2-VPN.md) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
+
+Faites le quizz de validation ssh sur Moodle.
 
 Bravo, vous êtes maintenant ceinture verte de bash. Vous voulez devenir ceinture noire ? Apprenez à maitriser [l'art de la ligne de commande](https://github.com/jlevy/the-art-of-command-line/blob/master/README-fr.md).
 
