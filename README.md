@@ -59,7 +59,7 @@ Si non, jouez à [Find your path](http://demo710.univ-lyon1.fr/FYP/) pour vous f
 
 La [console](https://doc.ubuntu-fr.org/console) est une interface textuelle qui permet à un utilisateur de demander à l'ordinateur de réaliser certaines tâches, uniquement à l'aide d'un écran et d'un clavier. Sur un serveur sans interface graphique la console est généralement directement accessible au démarrage. Sur une machine grand public, on utilise un [émulateur de terminal](https://doc.ubuntu-fr.org/terminal), c'est-à-dire un programme qui émule une console dans une interface graphique.
 
-L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que le système d'exploitation exécute. Quand une ligne de commande est écrite, elle est passée à l'interpréteur de lignes de commande (=*shell*), qui la décortique et se charge de la faire exécuter en interaction avec le système d'exploitation. Il existe de nombreux interpréteurs de lignes de commandes, qui fonctionnent tous plus ou moins de la même façon. Nous considérerons que ce sera *Bourne-Again Shell* (bash) dans le reste du document. C'est le shell associé par défaut à un compte d'utilisateur dans Ubuntu. Si vous utilisez un autre système d'exploitation, voyez comment utiliser un émulateur de terminal, ainsi que bash, ou vous adapter à un shell similaire. Cette [page de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/1-Terminal.md) peut vous aider. 
+L'utilisateur n'a qu'à écrire par le clavier la *commande* qu'il souhaite que le système d'exploitation exécute. Quand une ligne de commande est écrite, elle est passée à l'interpréteur de lignes de commande (=*shell*), qui la décortique et se charge de la faire exécuter en interaction avec le système d'exploitation. Il existe de nombreux interpréteurs de lignes de commandes, qui fonctionnent tous plus ou moins de la même façon. Nous considérerons que ce sera *Bourne-Again Shell* (bash) dans le reste du document. C'est le shell associé par défaut à un compte d'utilisateur dans Ubuntu. Si vous utilisez un autre système d'exploitation, voyez comment utiliser un émulateur de terminal, ainsi que bash, ou vous adapter à un shell similaire. Cette [page de l'astus](https://tcastus.github.io/TChelp/Travailler_a_distance/1-Terminal.html) peut vous aider. 
 
 ## 2. Passer aux commandes
 
@@ -79,7 +79,7 @@ Téléchargez et décompressez cette [archive](bash/bash_exercises.tar.bz2), pui
 
 Faites le quizz de validation bash sur Moodle.
 
-Enfin, en ces temps où le travaille à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://github.com/TCastus/TChelp/blob/master/Travailler_a_distance/2-VPN.md) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
+Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
 
 Faites le quizz de validation ssh sur Moodle.
 
@@ -89,7 +89,7 @@ Bravo, vous êtes maintenant ceinture verte de bash. Vous voulez devenir ceintur
 
 de 1h à 4h
 
-Vous allez bientôt écrire vous-mêmes des programmes. Ces programmes ne seront d'abord rien d'autres que du texte sauvegardé dans un fichier. Pour écrire du texte, vous avez besoin avant tout d'un *éditeur de texte*, un logiciel permettant d'écrire et modifier un texte. De même que vous êtes libres d'utiliser le système d'exploitation qui vous convient, vous êtes libres d'utiliser l'éditeur de texte qui vous convient, sous réserve que vous sachiez les utiliser bien sûr... Néanmoins, nous vous demandons de savoir utiliser, à un niveau débutant au moins, un éditeur particulier : *vi*. Pourquoi lui ? Il fait parti probablement de tous les systèmes d'exploitation de type unix, car il est léger, rapide, économe en ressource, puissant en fonctionnalités. Vous devrez peut-être un jour vous connecter à un serveur en mode console et modifier un fichier de configuration. Vous serez alors content de savoir ouvrir le fichier avec vi, passer en mode insertion et sauvegarder vos modifications. Vous vous remercierez d'avoir regarder attentivement les liens suivants : 
+Vous allez bientôt écrire vous-mêmes des programmes. Ces programmes ne seront d'abord rien d'autre que du texte sauvegardé dans un fichier. Pour écrire du texte, vous avez besoin avant tout d'un *éditeur de texte*, un logiciel permettant d'écrire et modifier un texte. De même que vous êtes libres d'utiliser le système d'exploitation qui vous convient, vous êtes libres d'utiliser l'éditeur de texte qui vous convient, sous réserve que vous sachiez les utiliser bien sûr... Néanmoins, nous vous demandons de savoir utiliser, à un niveau débutant au moins, un éditeur particulier : *vi*. Pourquoi lui ? Il fait parti probablement de tous les systèmes d'exploitation de type unix, car il est léger, rapide, économe en ressource, puissant en fonctionnalités. Vous devrez peut-être un jour vous connecter à un serveur en mode console et modifier un fichier de configuration. Vous serez alors content de savoir ouvrir le fichier avec vi, passer en mode insertion et sauvegarder vos modifications. Vous vous remercierez d'avoir regarder attentivement les liens suivants : 
 
 - [tutoriel](https://openclassrooms.com/en/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur),
 - [FAQ](http://www.linux-france.org/article/appli/vi/faq/vifaq.html),
@@ -134,8 +134,8 @@ Attention, il y a différentes versions de python qui cohabitent encore ça et l
 
 4h
 
-- [Git](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/1-Git.md)
-- [Github](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/2-GitHub.md)
+- [Git](https://tcastus.github.io/TChelp/Git_GitHub/1-Git.html)
+- [Github](https://tcastus.github.io/TChelp/Git_GitHub/2-GitHub.html)
 
 Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des fichiers à compléter pour réaliser un programme python capable de résoudre une grille de Sudoku. L'objectif n'est pas tant de coder complètement un tel programme, mais de développer à plusieurs (au moins deux !) et se familiariser avec git et github.
 
