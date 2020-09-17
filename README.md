@@ -79,6 +79,8 @@ Téléchargez et décompressez cette [archive](bash/bash_exercises.tar.bz2), pui
 
 Faites le quizz de validation bash sur Moodle.
 
+![Relevant XKCD](https://imgs.xkcd.com/comics/tar.png)
+
 Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). Ces [documentations de l'astus](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html) peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. 
 
 Faites le quizz de validation ssh sur Moodle.
