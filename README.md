@@ -95,7 +95,7 @@ Vous allez bientôt écrire vous-mêmes des programmes. Ces programmes ne seront
 
 - [tutoriel](https://openclassrooms.com/en/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur),
 - [FAQ](http://www.linux-france.org/article/appli/vi/faq/vifaq.html),
-- [cheatsheet](https://www.ks.uiuc.edu/Training/Tutorials/Reference/virefcard.pdf) (vous en trouverez pleins d'autres sur le web),
+- [cheatsheet](https://www.csee.umbc.edu/courses/undergraduate/202/spring07/Resources/RiceViCheatSheet.pdf) (vous en trouverez pleins d'autres sur le web),
 - [vi ou vim ?](https://doc.fedora-fr.org/wiki/Diff%C3%A9rences_entre_vi_et_vim). Note : dans Ubuntu, comme dans d'autres systèmes, vim est le seul éditeur de type vi installé par défaut, et donc, vi démarre vim par défaut. Ce n'est pas un problème car tout ce qui est dans vi est disponible dans vim.   
 
 Téléchargez et décompressez cette [archive](vi/vi_exercises.zip), puis traitez les questions listées dans le fichier `vi.pdf`.
