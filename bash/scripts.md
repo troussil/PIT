@@ -41,13 +41,17 @@ Ecrire un script nommé `existe` qui admet deux paramètres, un nom de fichier e
 - s'il n'y a qu'un argument représentant un fichier, faire la recherche dans le répertoire courant,
 - s'il y a deux arguments, un fichier, suivi d'un répertoire, indiquer si le fichier donné se trouve dans le répertoire donné ou non. 
 - s'il y a trop d'arguments ou si le premier (resp. second) n'est pas un fichier (resp. répertoire), écrire un message d'erreur.
+
 Vous utiliserez les structures de contrôle `case` pour le nombre d'arguments, `if` pour s'assurer que les chaines représentent des fichiers ou répertoires, ainsi que les commandes `echo`, `test`, `ls`, `grep`.
+
+Note : si vous ne voulez pas de l'affichage d'une commande vous pouvez rediriger sa sortie standard ou d'erreur vers `/dev/null`.
 
 ## Exercice 4
 
 Ecrire un script nommé `utilisateur` qui recherche plusieurs numéros d'utilisateurs dans le fichier `/etc/passwd` (les numéros d'utilisateur se trouvent dans le troisième champs).
 - si aucun paramètre n'est fourni, on affiche la liste des numéros d'utilisateur,
 - sinon, pour chaque numéro fourni, on indique si celui-ci se trouve dans le fichier `/etc/passwd` ou non.
+
 Vous serez amenés à utiliser `echo`, `cut`, `grep`, ainsi que les structures de contrôle `if` et `for`.  
 
 ## Exercice 5
@@ -56,6 +60,7 @@ Ecrire un script nommé `question` qui admet en entrée une question, la pose à
 - si la réponse est `o` (oui), le script retourne `0` avec la commande `exit`.
 - si la réponse est `n` (non), le script retourne immédiatement `1`,
 - si la réponse est autre, le script repose la question.
+
 Vérifier le code renvoyé par le script avec la commande `echo $?`.
 
 ## Exercice 6
@@ -69,9 +74,9 @@ Un processus peut se protéger contre un [signal](https://fr.wikipedia.org/wiki/
 ## Exercice 7
 
 Ecrire un script nommé `pas10pas12` qui se met en attente active (boucle infinie) et affiche "signal 10" (resp. "signal 12") à la réception du signal 10 (resp. 12).
-Pour envoyer des signaux à votre script en cours d'exécution, utiliser les commande `ps` et `kill`.
+Pour envoyer des signaux à votre script en cours d'exécution, utiliser les commandes `ps` et `kill`.
 
 ## Exercice 8 (optionnel)
 
 Ecrire un script en attente perpétuelle de signaux. Le signal 10 (resp. 12) aura la valeur 0 (resp. 1) dans la [table ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#Description). Quand une lettre de l'alphabet (minuscule) est reconnue, celle-ci est affichée sur la sortie standard.
-Note : si vous êtes avancés, utilisez des fonctions pour la traduction signaux - caractères.  
+Note : si vous êtes avancés, utilisez des fonctions pour la traduction des signaux vers les caractères.  
