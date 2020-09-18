@@ -74,7 +74,8 @@ Un processus peut se protéger contre un [signal](https://fr.wikipedia.org/wiki/
 ## Exercice 7
 
 Ecrire un script nommé `pas10pas12` qui se met en attente active (boucle infinie) et affiche "signal 10" (resp. "signal 12") à la réception du signal 10 (resp. 12).
-Pour envoyer des signaux à votre script en cours d'exécution, utiliser les commandes `ps` et `kill`.
+
+Pour envoyer des signaux à votre script en cours d'exécution, utilisez les commandes `ps` et `kill`.
 
 ## Exercice 8 (optionnel)
 
