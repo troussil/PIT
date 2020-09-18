@@ -77,6 +77,8 @@ Une *commande* est une instruction qu'un utilisateur envoie au système d'exploi
 
 Téléchargez et décompressez cette [archive](bash/bash_exercises.tar.bz2), puis traitez les questions listées dans le fichier `instructions.md`.
 
+Vous avez des difficultés ? Faites un tour sur la [FAQ](FAQ.md). 
+
 Faites le quizz de validation bash sur Moodle.
 
 ![Relevant XKCD](https://imgs.xkcd.com/comics/tar.png)
