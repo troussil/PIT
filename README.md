@@ -116,7 +116,7 @@ C'est très utile quand on veut automatiser certaines tâches comme convertir le
 
 de 8h à 12h
 
-Vous allez maintenant apprendre à programmer dans un langage de haut niveau. Il a l'avantage d'être facile à prendre en main par un débutant et d'être puissant dans le sens où quelques lignes assez lisibles permettront au programmeur de faire effectuer un traitement complexe. Il est très utilisé, entre autres domaines, dans le web côté serveur (Django, Flask), en calcul scientifique (Numpy, Matplotlib, Sympy), en machine learning (Pytorch), voire en administration système remplaçant parfois bash. 
+Vous allez maintenant apprendre à programmer dans un langage de haut niveau. Il a l'avantage d'être facile à prendre en main par un débutant et d'être puissant dans le sens où quelques lignes assez lisibles permettront au programmeur de faire effectuer un traitement complexe. Il est très utilisé, entre autres domaines, dans le web côté serveur ([Django](https://www.djangoproject.com/), [Flask](https://flask.palletsprojects.com/)), en calcul scientifique ([Numpy](https://numpy.org/), [Matplotlib](https://matplotlib.org/), [Sympy](https://www.sympy.org/), [SageMath](https://www.sagemath.org/)), en machine learning ([Pytorch](https://pytorch.org/)), voire en administration système, remplaçant alors bash. 
 
 - [niveau débutant](https://zestedesavoir.com/tutoriels/799/apprendre-a-programmer-avec-python-3/)
 - niveau avancé, documentation officielle :
@@ -124,11 +124,11 @@ Vous allez maintenant apprendre à programmer dans un langage de haut niveau. Il
   - [HOWTOs](https://docs.python.org/fr/3/howto/index.html)
   - [FAQ](https://docs.python.org/fr/3/faq/programming.html)
  
-Pour chacun des items suivants, faites les exercices correspondants, puis répondez au quizz de validation Moodle.
+Pour chacun des items suivants, faites les exercices, puis répondez au quizz de validation correspondant sur Moodle.
 
-- [Premiers pas](python/1.pdf)
-- [Manipuler des objets](python/2.pdf)
-- [Créer des objets](python/3.pdf)
+- (5) [Premiers pas](python/1.pdf)
+- (6) [Manipuler des objets](python/2.pdf)
+- (7) [Créer des objets](python/3.pdf)
 
 Attention, il y a différentes versions de python qui cohabitent encore ça et là. Python 2 est maintenant obsolète. Veillez à programmer en python 3 et vérifier la version des extraits de code que vous glanez sur le web.  
 
@@ -168,7 +168,7 @@ Diffile de savoir qui est à l'origine de telle selection de ressources, tel exe
 
 ## Contributions depuis la rentrée 2020
 
-Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request". N'oubliez pas d'ajouter votre nom à la liste des contributeurs :
+Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request". N'oubliez pas d'ajouter votre nom à la liste des contributeurs.
 
 Contributeurs par ordre alphabétique :
 - Tristan Roussillon
