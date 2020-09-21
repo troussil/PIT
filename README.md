@@ -83,7 +83,7 @@ Faites le quizz de validation bash sur Moodle.
 
 ![Relevant XKCD](https://imgs.xkcd.com/comics/tar.png)
 
-Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). La documentation de l'astus peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. D'abord, ce connecter au [VPN](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html), puis lancer une session [SSH](https://tcastus.github.io/TChelp/Travailler_a_distance/3-ConnexionDistanteSSH.html)
+Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). La documentation de l'astus peut vous aider à vous connecter à des machines de l'INSA depuis chez vous. D'abord, ce connecter au [VPN](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html), puis lancer une session [SSH](https://tcastus.github.io/TChelp/Travailler_a_distance/3-ConnexionDistanteSSH.html).
 
 Faites le quizz de validation ssh sur Moodle.
 
