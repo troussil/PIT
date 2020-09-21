@@ -166,7 +166,7 @@ Vous voulez allier l'utile à l'agréable ? Continuez à vous familliariser avec
 
 ## Remerciements
 
-Diffile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels les liens conduisent. Nous traçons les contributions uniquement depuis la diffusion publique du document. 
+Difficile de savoir qui est à l'origine de telle selection de ressources, tel exercice, telle archive, repris et parfois modifiés au fil des ans. Merci à tous les collègues ayant contribué de près ou de loin à ce document et plus généralement à tous les créateurs de contenus vers lesquels les liens conduisent. Nous traçons les contributions uniquement depuis la diffusion publique du document. 
 
 ## Contributions depuis la rentrée 2020
 
