@@ -83,7 +83,7 @@ Faites le quizz de validation bash sur Moodle.
 
 ![Relevant XKCD](https://imgs.xkcd.com/comics/tar.png)
 
-Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). La documentations de l'astus peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. D'abord, ce connecter au [VPN](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html) puis lancer une session [SSH](https://tcastus.github.io/TChelp/Travailler_a_distance/3-ConnexionDistanteSSH.html)
+Enfin, en ces temps où le travail à distance prend de l'ampleur, nous vous demandons de connaître le protocole de communication [SSH](https://doc.ubuntu-fr.org/ssh) et de maitriser les commandes *ssh* (section 2.1, 2.3) et *scp* (section 2.4). La documentation de l'astus peuvent vous aider à vous connecter à des machines de l'INSA depuis chez vous. D'abord, ce connecter au [VPN](https://tcastus.github.io/TChelp/Travailler_a_distance/2-VPN.html), puis lancer une session [SSH](https://tcastus.github.io/TChelp/Travailler_a_distance/3-ConnexionDistanteSSH.html)
 
 Faites le quizz de validation ssh sur Moodle.
 
@@ -173,5 +173,6 @@ Diffile de savoir qui est à l'origine de telle selection de ressources, tel exe
 Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Faites un `git clone https://github.com/troussil/PIT`. Faites vos modifications, puis proposez-moi d'intégrer vos modifications en faisant une "pull request". N'oubliez pas d'ajouter votre nom à la liste des contributeurs.
 
 Contributeurs par ordre alphabétique :
+- Titouan-joseph Revol
 - Tristan Roussillon
 
