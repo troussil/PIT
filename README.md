@@ -126,13 +126,15 @@ Vous allez maintenant apprendre à programmer dans un langage de haut niveau. Il
   - [HOWTOs](https://docs.python.org/fr/3/howto/index.html)
   - [FAQ](https://docs.python.org/fr/3/faq/programming.html)
  
-Pour chacun des items suivants, faites les exercices, puis répondez au quizz de validation correspondant sur Moodle.
+Attention, il y a différentes versions de python qui cohabitent encore ça et là. Python 2 est maintenant obsolète. Veillez à programmer en python 3 et vérifier la version des extraits de code que vous glanez sur le web.
+
+Pour chacun des items suivants, faites les exercices. 
 
 - (5) [Premiers pas](python/1.pdf)
 - (6) [Manipuler des objets](python/2.pdf)
 - (7) [Créer des objets](python/3.pdf)
 
-Attention, il y a différentes versions de python qui cohabitent encore ça et là. Python 2 est maintenant obsolète. Veillez à programmer en python 3 et vérifier la version des extraits de code que vous glanez sur le web.  
+Répondez aux questionnaires de validation sur Moodle.
 
 ## 8. Git, Github
 
