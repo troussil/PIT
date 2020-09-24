@@ -27,10 +27,10 @@ echo "a=$a"
 echo "b=$b"
 ```
 Tester dans les cas suivants :
-- `saisie`
-- `saisie toto`
-- `saisie toto titi`
-- `saisie toto titi tata`
+- `saisie` entrée
+- `saisie` entrée `toto` entrée 
+- `saisie` entrée `toto titi` entrée 
+- `saisie` entrée `toto titi tata` entrée 
 
 # Choix et boucles
 
@@ -42,7 +42,7 @@ Ecrire un script nommé `existe` qui admet deux paramètres, un nom de fichier e
 - s'il y a deux arguments, un fichier, suivi d'un répertoire, indiquer si le fichier donné se trouve dans le répertoire donné ou non. 
 - s'il y a trop d'arguments ou si le premier (resp. second) n'est pas un fichier (resp. répertoire), écrire un message d'erreur.
 
-Vous utiliserez les structures de contrôle `case` pour le nombre d'arguments, `if` pour s'assurer que les chaines représentent des fichiers ou répertoires, ainsi que les commandes `echo`, `test`, `ls`, `grep`.
+Vous utiliserez les structures de contrôle `case` pour le nombre d'arguments, `if` pour s'assurer que les chaines représentent des fichiers ou répertoires, ainsi que les commandes `echo`, `test`, `find` ou `ls` et `grep`.
 
 Note : si vous ne voulez pas de l'affichage d'une commande vous pouvez rediriger sa sortie standard ou d'erreur vers `/dev/null`.
 

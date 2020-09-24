@@ -1,6 +1,6 @@
 # FAQ
 
-## `bash_exercices` et autres commandes 
+## `bash_exercices`
 
 - Je veux commencer les exercices sur bash mais je ne comprends pas où aller.
 
@@ -18,6 +18,33 @@
 
 > Dans la section *Archivage*, on vous demande de regroupez vos fichiers `.log` dans un nouveau répertoire et vous avez la bonne idée d'utiliser `find` pour obtenir la liste des fichiers `.log`. Par exemple `find . -name *.log`. Mais la commande `mv` ne lit rien sur l'entrée standard et attend la liste des fichiers à déplacer comme arguments. Heureusement `find` a une option `exec` qui résoud ce problème. Il suffit de faire suivre l'option `exec` par la commande que l'on souhaite voir exécuter, en ajoutant néanmoins deux symboles spéciaux : `{}` qui représente les fichiers trouvés par `find` et un symbole de terminaison, qui peut être soit `\;`, soit `+` (sachant que `+` doit être immédiatement précédé par `{}`). Si le symbole de terminaison est `\;`, la commande sera exécutée *successivement* pour *chacun* des fichiers trouvés, si c'est `+`, la commande sera exécutée *une seule fois* avec la *liste* des fichiers trouvés.
 
+## Autres commandes et astuces 
+
 - Je n'arrive pas à utiliser `scp` ; j'ai pourtant vérifé la bonne utilisation de toutes les options...
 
-> SSH est un protocole permettant d'établir une communication sécurisée sur un réseau entre sa machine locale et une machine distante. Les machines ont deux rôles différents : la machine locale est le *client*, tandis que la machine distante est le *serveur*. Ce protocole est utilisé pour différents cas d'usage, par différentes commandes. La commande `ssh` permet d'accéder au shell de la machine distante et faire comme si on travaillait directement dessus. La commande `scp` permet de transférer des fichiers (ou répertoires) d'une machine à l'autre. Ce sont donc deux cas d'usage à bien distinguer. Pour taper la commande `scp`, vous devez être dans le shell de la machine locale et non dans le shell de la machine distante, comme vous pouvez l'être après avoir utilisé la commande `ssh`. Si vous venez de taper la commande `ssh`, il faut clore la connexion avant de taper la commande `scp`. 
+> SSH est un protocole permettant d'établir une communication sécurisée sur un réseau entre sa machine locale et une machine distante. Les machines ont deux rôles différents : la machine locale est le *client*, tandis que la machine distante est le *serveur*. Ce protocole est utilisé pour différents cas d'usage, par différentes commandes. La commande `ssh` permet d'accéder au shell de la machine distante et faire comme si on travaillait directement dessus. La commande `scp` permet de transférer des fichiers (ou répertoires) d'une machine à l'autre. Ce sont donc deux cas d'usage à bien distinguer. Pour taper la commande `scp`, vous devez être dans le shell de la machine locale et non dans le shell de la machine distante, comme vous pouvez l'être après avoir utilisé la commande `ssh`. Si vous venez de taper la commande `ssh`, il faut clore la connexion avant de taper la commande `scp`.
+
+- Quotes simples, doubles, inversées... je ne m'y retrouve pas. 
+
+> La quote simple (ou apostrophe) sert à délimiter une chaîne de caractère en désactivant toute interprétation, même si cette chaîne contient des commandes ou des variables shell. Par exemple :
+```
+$ variable="secret"
+$ echo 'Mon mot de passe est $variable.'
+Mon mot de passe est $variable.
+```
+> La quote double (ou guillemet) sert à délimiter une chaîne de caractère dans laquelle les noms de variable sont interprétés. Ceci est utile pour générer des messages dynamiques au sein d'un script. Par exemple :
+```
+$ variable="secret"
+$ echo "Mon mot de passe est $variable."
+Mon mot de passe est secret.
+```
+> La quote inversée (back-quote en anglais) sert à délimiter une chaîne de caractère dans laquelle les noms de variable *et les commandes* sont interprétés. Pour ajouter le répertoire courant à la variable `PATH`, vous pouvez par exemple écrire :
+```
+PATH=$PATH:`pwd`
+```
+
+## scripts bash
+
+- Mon script ne fait pas du tout ce qu'il devrait faire / Mon script ne fait rien. Le code de mon script me parait pourtant correct...
+
+Attention à ne pas nommer votre script par le nom d'une commande qui existe déjà. Par exemple, `test` est un nom malheureux pour l'un de vos scripts, car il existe déjà une commande ` test`. Imaginons que vous écrivez un super script tout à fait correct mais que vous nommez `test`. Vous le rendez exécutable et oubliez ou non d'ajouter le répertoire dans lequel il se trouve au `PATH`. Vous tapez `test` et il ne se passe rien. Vous pouvez constater avec `echo $?` que la valeur de retour est `1`, ce qui indique une erreur, car la commande `test` attend habituellement un argument. 
