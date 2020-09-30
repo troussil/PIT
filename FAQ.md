@@ -47,4 +47,43 @@ PATH=$PATH:`pwd`
 
 - Mon script ne fait pas du tout ce qu'il devrait faire / Mon script ne fait rien. Le code de mon script me parait pourtant correct...
 
-Attention à ne pas nommer votre script par le nom d'une commande qui existe déjà. Par exemple, `test` est un nom malheureux pour l'un de vos scripts, car il existe déjà une commande ` test`. Imaginons que vous écrivez un super script tout à fait correct mais que vous nommez `test`. Vous le rendez exécutable et oubliez ou non d'ajouter le répertoire dans lequel il se trouve au `PATH`. Vous tapez `test` et il ne se passe rien. Vous pouvez constater avec `echo $?` que la valeur de retour est `1`, ce qui indique une erreur, car la commande `test` attend habituellement un argument. 
+> Attention à ne pas nommer votre script par le nom d'une commande qui existe déjà. Par exemple, `test` est un nom malheureux pour l'un de vos scripts, car il existe déjà une commande ` test`. Imaginons que vous écrivez un super script tout à fait correct mais que vous nommez `test`. Vous le rendez exécutable et oubliez ou non d'ajouter le répertoire dans lequel il se trouve au `PATH`. Vous tapez `test` et il ne se passe rien. Vous pouvez constater avec `echo $?` que la valeur de retour est `1`, ce qui indique une erreur, car la commande `test` attend habituellement un argument.
+
+## Python
+
+- Comment exécuter un script ?
+
+> Vous écrivez votre programme dans un fichier, nommé par exemple `script.py`, puis tapez la commande suivante : `python3 script.py`. Par ailleurs, pour transformer votre fichier en véritable fichier exécutable, il faut lui accorder le droit d'exécution, avec par exemple la commande `chmod u+x script.py` et lui ajouter, en première ligne, le *shebang*, qui indique l'outil permettant l'interprétation du script, par exemple `#!/usr/bin/env python3`. Après avoir fait cela, vous pourrez taper plus simplement `./script.py` ou même `script.py`, si le répertoire courant est listé dans la variable d'environnement `PATH`. 
+
+- Comment exécuter une fonction ?
+
+> Imaginons que `func.py` contienne :
+```
+def sayHello():
+    print("hello")
+```
+> Le plus simple, c'est de lancer le script puis d'entrer dans le mode interactif. Cela est possible avec l'option `-i`. Par exemple, `python3 -i func.py`. A l'issue de l'exécution du script, le prompt python, symbolisé par `>>>`, apparait et vous pouvez écrire et faire évaluer des expressions python. Si vous tapez `sayHello()`, vous verrez s'afficher `hello`. Une autre façon de faire consiste à entrer dans le mode interactif avec la commande `python3`, puis à importer les instructions et définitions contenues dans le fichier `func.py`, vu maintenant comme un *module*. Il suffit d'écrire pour cela `import func` (le nom du fichier sans l'extension `.py` donne le nom du module). Le contenu de `func.py` est alors interprété et la fonction `sayHello` devient connue. Si vous tapez `func.sayHello()`, vous verrez s'afficher `hello`. Remarquez qu'il existe d'autres directives d'import pour être autorisé à écrire plus simplement `sayHello`, par exemple `from func import sayHello`.
+
+- Des traces s'affichent quand j'importe un module, comment les désactiver ?
+
+> Imaginons que `func.py` contienne :
+```
+def sayHello():
+    return "hello"
+    
+if sayHello() == "hello":
+    print("test OK")
+else:
+    print("test failed")
+```
+> Si vous importez le module `func.py`, le résultat du test s'affichera à l'écran. Mais il est probable que vous ne vouliez pas de cet affichage, que vous ne vouliez que de la fonction `sayHello`. Or, il est possible de n'activer cet affichage que lorsque le module est exécuté comme un script en réécrivant le test ainsi :
+```
+if __name__ == "__main__":
+    if sayHello() == "hello":
+        print("test OK")
+    else:
+        print("test failed")
+```
+> En effet, quand un module est exécuté comme un script, la variable `__name__` censée contenir le nom du module contiendra la valeur `"__main__"`. 
+
+
