@@ -1,4 +1,4 @@
-#Principales erreurs
+# Principales erreurs
 
 - Attention quand vous créez vos archives (nous avons eu des archives vides) et quand vous téléversez vos archives sur Moodle (certains pensaient avoir rendu, alors que ce n'était pas le cas). Enfin, ne transmettez pas des archives au format *RAR*, du fait du caractère fermé du format, préférez un format plus standard comme `zip` ou `tar.gz`.
 

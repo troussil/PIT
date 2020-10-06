@@ -86,4 +86,87 @@ if __name__ == "__main__":
 ```
 > En effet, quand un module est exécuté comme un script, la variable `__name__` censée contenir le nom du module contiendra la valeur `"__main__"`. 
 
+- J'ai un message d'erreur mentionnant `NoneType`. Que se passe-t-il ?
 
+> Python est un langage typé, mais implicitement. Si vous tapez `x = 5`, puis `type(x)`, vous obtiendrez `<class 'int'>`, indiquant que `x` est une variable de type `int`. Il y a un type spécial vide appelé `NoneType`. Si vous avez défini une fonction `func` qui ne retourne aucune valeur (vous n'avez pas utilisé le mot-clé `return`) et que vous tapez `x = func()`, puis `type(x)`, alors vous obtiendrez `<class 'NoneType'>`. Cela peut arriver si vous confondez *effet* - ce que fait la fonction, par exemple afficher quelque chose vers la sortie standard - et *valeur de retour* - ce qui est renvoyé par la fonction après qu'elle ait été appelée.  
+
+> Pas bien :
+```python
+import math
+
+def cube(x): 
+  print(x*x*x)
+
+def volSphere(radius): 
+  print(4/3*math.pi*cube(radius))
+```
+```
+>>> volSphere(3)
+27
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "essai.py", line 7, in volSphere
+    print(4/3*math.pi*cube(radius))
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+```
+> Bien :
+```python
+import math
+
+def cube(x): 
+  return x*x*x
+
+def volSphere(radius): 
+  return 4/3*math.pi*cube(radius)
+```
+```
+>>> volSphere(3)
+113.09733552923254
+```
+
+- Quel est le rôle de l'opérateur `*` (star ou splat) devant les arguments (lors de l'appel à une fonction) ou les paramètres (lors de la définition d'une fonction) ?
+
+> Vous pouvez définir une fonction avec une liste de paramètres, éventuellement de type différent. Si lors de l'appel, vous avez une liste ou un tuple contenant l'ensemble des valeurs requises, il est possible d'utiliser l'opérateur `*` pour faire la correspondance entre les valeurs contenues dans la liste ou le tuple et les paramètres attendus sans avoir à extraire soi-même chacune des valeurs. Voici un exemple :
+```python
+def normL1(x, y, z):
+  return abs(x)+abs(y)+abs(z)
+```
+```
+>>> normL1(1,2,3)
+6
+>>> pt = [1,2,3]
+>>> normL1(*pt)
+6
+>>> pt = (1,2,3)
+>>> normL1(*pt)
+6
+```
+
+> Par ailleurs, comme il peut être parfois commode de voir la liste de paramètres comme un seul objet composé, il est aussi possible d'utiliser l'opérateur `*` lors de la définition de la fonction. Voici une version beaucoup plus élégante de la fonction précédente : 
+```python
+def normL1(*pt):
+  return sum([abs(c) for c in pt])
+```
+```
+>>> normL1(1,2,3)
+6
+>>> pt = [1,2,3]
+>>> normL1(*pt)
+6
+```
+
+> Le même mécanisme permet de mettre en correspondance des paramètres nommés et le contenu d'un dictionnaire. Il suffit pour cela de doubler l'opérateur. En voici un exemple :
+```python
+def volAndMassEllipsoid(**d):
+  print(type(d))
+  vol = 4/3*math.pi*d["a"]*d["b"]*d["c"]
+  mass = d["mu"]*vol
+  return vol, mass
+```
+```
+>>> volAndMassEllipsoid(a=1,b=1,c=2,mu=0.5)
+(8.377580409572781, 4.1887902047863905)
+>>> data = {"a":1,"b":1,"c":2,"mu":0.5}
+>>> volAndMassEllipsoid( **data )
+(8.377580409572781, 4.1887902047863905)
+```
