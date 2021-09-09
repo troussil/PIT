@@ -9,7 +9,7 @@ TC-3-I-PIT.
 
 ## 1. Faire connaissance
 
-4h
+2 à 4h
 
 ### Informatique
 
