@@ -132,7 +132,7 @@ Pour chacun des items suivants, faites les exercices.
 
 - (5) [Premiers pas](python/1.pdf)
 - (6) [Manipuler des objets](python/2.pdf)
-- (7) [Créer des objets](python/3.pdf)
+- (7) niveau avancé : [Créer des objets](python/3.pdf)
 
 Répondez aux questionnaires de validation sur Moodle.
 
@@ -175,6 +175,6 @@ Difficile de savoir qui est à l'origine de telle selection de ressources, tel e
 Vous avez vu une coquille sur ce document, repéré un lien cassé ou voudriez corriger ça ? Vous aimeriez mentionner une ressource essentielle ? Vous voudriez ajouter une FAQ en fin de document ? Excellente idée ! Très facile ! Ce document est sur github. Vous cliquez sur `Fork` pour avoir une copie de ce projet sur votre compte. Ensuite vous faites `git clone` pour télécharger ce projet sur votre machine. Faites vos modifications, poussez-les sur le serveur avec `git push`, puis proposez-moi d'intégrer vos modifications en faisant une *pull request*. N'oubliez pas d'ajouter votre nom à la liste des contributeurs.
 
 Contributeurs par ordre alphabétique :
-- Titouan-joseph Revol
+- Titouan-Joseph Revol
 - Tristan Roussillon
 
