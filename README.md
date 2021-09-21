@@ -143,9 +143,9 @@ Répondez aux questionnaires de validation sur Moodle.
 - [Git](https://tcastus.github.io/TChelp/Git_GitHub/1-Git.html)
 - [Github](https://tcastus.github.io/TChelp/Git_GitHub/2-GitHub.html)
 
-Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des fichiers à compléter pour réaliser un programme python capable de résoudre une grille de Sudoku. L'objectif n'est pas tant de coder complètement un tel programme, mais de développer à plusieurs (au moins deux !) et se familiariser avec git et github.
+Téléchargez cette [archive](python/python_project.tar.bz2). Elle contient des fichiers à compléter pour réaliser un programme python capable de résoudre une grille de Sudoku. L'objectif est à la fois de coder un tel programme, mais surtout de développer à plusieurs (au moins deux !) et se familiariser ainsi avec git et github. Quand vous aurez fini, téléversez une archive de votre projet sur Moodle. 
 
-Vous pouvez aussi contribuer à améliorer ce document (voir la dernière section). 
+Vous pouvez aussi via git et github contribuer à améliorer ce document (voir la dernière section). 
 
 ## Suite de la formation et logiciels utilisés en TC
 
