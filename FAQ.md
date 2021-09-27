@@ -158,7 +158,6 @@ def normL1(*pt):
 > Le même mécanisme permet de mettre en correspondance des paramètres nommés et le contenu d'un dictionnaire. Il suffit pour cela de doubler l'opérateur. En voici un exemple :
 ```python
 def volAndMassEllipsoid(**d):
-  print(type(d))
   vol = 4/3*math.pi*d["a"]*d["b"]*d["c"]
   mass = d["mu"]*vol
   return vol, mass
