@@ -5,6 +5,7 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
+  pull_request:
   push:
     branches:
       - master
@@ -23,16 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+	with: 
+	  # In non-push events, such as pull_request, make sure to specify the ref to checkout:
+  	  ref: ${{ github.head_ref }}
+	
       # Runs a single command using the runners shell
-      - name: Recreate the archive if needed
+      - name: Recreate the archive 
         run: tar jcvf python/python-project.tar.bz2 python/python-project
 
       # Commit changes 
       - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        # Optional, but recommended
-        # Defaults to "Apply automatic changes"
-        commit_message: python project archive automatically updated
-        # Optional glob pattern of files which should be added to the commit
-        file_pattern: python/*.tar.bz2
+        with:
+          # Optional, but recommended
+          commit_message: python project archive automatically updated
+          # Optional glob pattern of files which should be added to the commit
+          file_pattern: python/*.tar.bz2
