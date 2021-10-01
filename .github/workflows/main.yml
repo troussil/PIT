@@ -24,10 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-	with: 
-	  # In non-push events, such as pull_request, make sure to specify the ref to checkout:
-  	  ref: ${{ github.head_ref }}
-	
+        with: 
+          # In non-push events, such as pull_request, make sure to specify the ref to checkout:
+          ref: ${{ github.head_ref }}
+
       # Runs a single command using the runners shell
       - name: Recreate the archive 
         run: tar jcvf python/python-project.tar.bz2 python/python-project
