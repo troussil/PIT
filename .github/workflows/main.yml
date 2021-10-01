@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Recreate the archive 
-        run: tar jcvf python/python-project.tar.bz2 python/python-project
+        run: tar jcvf python/python_project.tar.bz2 python/python_project
 
       # Commit changes 
       - uses: stefanzweifel/git-auto-commit-action@v4
